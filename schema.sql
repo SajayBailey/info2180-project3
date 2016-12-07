@@ -7,7 +7,7 @@ USE cheapomail;
 -- Creating User table
 
 CREATE TABLE User (
-id int NOT NULL UNIQUE auto_increment,
+id int NOT NULL UNIQUE AUTO_INCREMENT,
 firstname varchar(255) NOT NULL,
 lastname varchar(255) NOT NULL,
 username varchar(255) NOT NULL,
@@ -16,7 +16,7 @@ password varchar(255) NOT NULL
 
 -- Create Message table
 CREATE TABLE Message (
-id int NOT NULL UNIQUE auto_increment,
+id int NOT NULL UNIQUE AUTO_INCREMENT,
 recipient_ids int NOT NULL UNIQUE,
 user_id int NOT NULL UNIQUE,
 subject varchar(255),
