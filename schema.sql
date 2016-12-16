@@ -33,4 +33,5 @@ date_read DATE NOT NULL
 );
 
 -- Test User
--- INSERT INTO User VALUES ("John", "Doe", "johnny", "password");
+-- password is crypt ("Passwrd12","salt"). For testing NOTE it is "Passwrd12". No "o"/"O" present.
+INSERT INTO User (firstname, lastname, username, password) VALUES ("John", "Doe", "johnny", "sagwQ3H2M093Y");
